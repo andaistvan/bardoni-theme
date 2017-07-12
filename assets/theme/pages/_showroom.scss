@@ -1,0 +1,209 @@
+//------------------------
+// SHOWROOM
+//------------------------
+.container-showroom{
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+//------------------------
+// SIDEBAR
+//------------------------
+aside#sidebar.itemcat{
+    background: $panel-bg;
+    padding: 15px;
+    h2{
+        font-family: 'EkMukta-Medium';
+        font-size: 22px;
+        text-align: left;
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+        a{
+            color: $beige-text;
+        }
+    }
+}
+
+ul.category-box{
+    margin: 0 0 20px 0;
+    padding: 0;
+    li{
+        font-family: 'EkMukta-Regular';
+    }
+    li.main-cat{
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 0 0 4px 0;
+        padding: 0;
+        a{
+            color: $primary-color;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    li.sub-cat{
+        font-size: 15px;
+        a{
+            color: $gray-text;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+
+//------------------------
+// TOP INFO BLOCK (ajánlatkérés)
+//------------------------
+.showroom-top{
+    background: #131315;
+    border: 1px solid #DF5135;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.36);
+    border-radius: 3px;
+    padding: 15px;
+    margin: 0 5px;
+    hr{
+        border: 1px solid $gray-text;
+    }
+    h1{
+        margin: 0 0 15px 0;
+        font-size: 22px;
+        color: $primary-color;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    p{
+        text-align: center;
+        color: $gray-text;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+}
+//------------------------
+// BREADCRUMP BOX
+//------------------------
+.breadcrump-box{
+    width: 100%;
+}
+ul.showroom-breadcrump{
+    background: $panel-bg;
+    margin: 0;
+    padding: 15px 15px 8px 15px;
+    i{
+        color: $gray-text;
+    }
+    i{
+        padding: 0 3px;
+        line-height: 1.1em;
+    }
+    li, i{
+        float: left;
+    }
+    li.parent{
+        a{
+            font-family: 'EkMukta-Bold';
+            color: $gray-text;
+            font-size: 22px;
+            text-transform: uppercase;
+            line-height: 1.25em;
+            &:hover{
+                color: $primary-color-light;
+            }
+        }
+    }
+    li.active{
+        font-family: 'EkMukta-Bold';
+        color: $primary-color;
+        font-size: 22px;
+        text-transform: uppercase;
+        line-height: 1.25em;
+    }
+}
+
+//------------------------
+// SHOWROOM ITEMS
+//------------------------
+ul.items-list{
+    margin: 15px 0 0 0;
+    padding: 0;
+    li.item{
+
+        background: $panel-bg;
+        width: 32%;
+        margin: 0.66666667%;
+        display: block;
+        text-align: center;
+        float: left;
+        // padding-top: 3px;
+        a{
+            color: $gray-text;
+            line-height: 0px;
+            &:hover{
+                color: $primary-color;
+            }
+            h3.item-name{
+                font-size: 14px;
+                line-height: 40px;
+                margin: 0px;
+                padding: 0 10px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+//------------------------
+// ITEM - SINGLE ITEM
+//------------------------
+article.item-content{
+    margin: 10px auto 30px auto;
+    padding: 15px;
+    background: $panel-bg;
+}
+
+.feat-image{
+    width: 65%;
+    max-height: 400px;
+    // background: $gray-text;
+    // float: left;
+    padding: 0 20px 0 0;
+    // display: table-cell;
+    img{
+        max-width: 100%;
+        max-height: 400px;
+        display: table;
+        margin: auto;
+    }
+}
+
+.item-info-box{
+    width: 35%;
+    h1{
+        font-family: 'EkMukta-Bold';
+        font-size: 16px;
+        line-height: 1.4em;
+    }
+    p.item-description{
+        color: $gray-text;
+    }
+    hr{
+        border: 1px solid $gray-text;
+    }
+    .btn{
+        background: $primary-color;
+    }
+}
+
+// GALLERY
+
+.gallery-cont{
+    width: 100%;
+    height: 110px;
+    border: 1px dashed $primary-color-dark;
+    margin-top: 30px;
+}

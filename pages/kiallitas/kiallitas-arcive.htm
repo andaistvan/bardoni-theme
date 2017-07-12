@@ -1,0 +1,22 @@
+title = "kiallitás"
+url = "/kiallitas"
+layout = "main-layout"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/kiallitas"
+==
+<div class="container container-main container-kiallitas">
+    <div class="row row-nomargin">
+
+        <div class="col s12 m3 hide-on-small-only">
+            {% partial 'sidebar-kiallitas' %}
+        </div>
+
+        <div class="col s12 m9">
+            <!-- COMPONENT! -->
+            {% partial 'kiallitasok' %}
+        </div>
+
+    </div><!-- row row-nomargin -->
+</div><!-- container container-main -->

@@ -1,0 +1,109 @@
+description = "default footer"
+==
+<!-- PARENT: footer#layout-footer -->
+<div class="container footer-container">
+    <!-- bemutatozas -->
+    <div id="bemutatkozas">
+        <div class="row row-nomargin">
+            <div class="col s12 m4 hide-on-small-only">
+                <div class="img-cont">
+                    <img class="responsive" src="{{ 'assets/images/head-interieur.png'|theme }}" alt="bemutatkozá kép">
+                </div><!-- img-cont -->
+            </div><!-- col s12 m4 -->
+            <div class="col s12 m8">
+                <h2>bardoni interieur</h2>
+                <p>
+                    A <span>BARDONI</span> a XX. század első felének közép-európai bútoraira és lakberendezési tárgyaira specializálódott, ami magába foglalja a Szecesszió, az Art Deco és a Bauhaus stílusjegyeit, de kreatívan használja a 60-as, 70-es évek designbútorait is.
+                    <br><br>
+                    A <span>BARDONI</span> lakberendezési stúdiója külön figyelmet fordít arra, hogy ezen bútorok a mai ember ízlésvilágának és magas minőségi követelményeinek egyaránt megfeleljenek, lehetővé téve, hogy életterüknek a XXI. században is fényűző berendezési tárgyai lehessenek.
+                </p>
+            </div><!-- col s12 m8 -->
+        </div><!-- row row-nomargin -->
+    </div><!-- bemutatkozas -->
+    <!-- bemutatozas -->
+
+    <!-- footer top -->
+    <div id="footer-top">
+        <div class="row row-nomargin">
+            <div class="col s12 m4">
+                <h4>elérhetőség</h4>
+                <p class="margin-bottom27">
+                    BARDONI INTERIEUR<br>
+                    1055 Budapest, Falk Miksa u. 12.<br>
+                    <a href="mailto:bardoni@bardoni.hu">bardoni@bardoni.hu</a><br>
+                    +36 1 269 0090
+                </p>
+
+                <h4>nyitva tartás</h4>
+                <p>
+                    Hétfő - Péntek 10h - 18h<br>
+                    Szombat 10h - 14h
+                </p>
+
+                <ul class="footer-social">
+                    <li><a href="#"><img src="{{ 'assets/images/social/facebook_icon.png'|theme }}" alt="facebook ikon"></a></li>
+                    <li><a href="#"><img src="{{ 'assets/images/social/twitter_icon.png'|theme }}" alt="twitter ikon"></a></li>
+                    <li><a href="#"><img src="{{ 'assets/images/social/vimeo_icon.png'|theme }}" alt="vimeo ikon"></a></li>
+                    <li><a href="#"><img src="{{ 'assets/images/social/linkedin_icon.png'|theme }}" alt="linkedin ikon"></a></li>
+                    <li><a href="#"><img src="{{ 'assets/images/social/googleplus_icon.png'|theme }}" alt="googleplus ikon"></a></li>
+                </ul>
+            </div><!-- col s12 m4 -->
+
+            <div class="col s12 m4">
+                <h4>sitemap</h4>
+                <div class="footer-menu">
+                    <p><a href="{{ 'home'|page }}">Kezdőlap</a></p>
+                    <p><a href="{{ 'showroom/showroom'|page }}">Showroom</a></p>
+                    <p><a href="{{ 'kiallitas/kiallitas-arcive'|page }}">Kiállítások</a></p>
+                    <p><a href="{{ 'lakberendezes/lakberendezes'|page }}">Lakberendezés</a></p>
+                    <p><a href="{{ 'kapcsolat'|page }}">Kapcsolat</a></p>
+                    <br>
+                    <p><a href="{{ 'kiallitas/kiallitas-arcive'|page }}">Szállítási információk</a></p>
+                    <p><a href="{{ 'lakberendezes/lakberendezes'|page }}">Adatvédelmi és jogi nyilatkozat</a></p>
+                    <p><a href="{{ 'kapcsolat'|page }}">Adás-vétel</a></p>
+                </div><!-- footer-menu -->
+
+            </div><!-- col s12 m4 -->
+
+            <div class="col s12 m4">
+                <h4>feliratkozás hírlevélre</h4>
+                <div class="form-cont">
+                    <!-- name -->
+                    <div class="input-field">
+                        <input type="text" id="name" name="name">
+                        <label for="name" class="mat-label">Név*</label>
+                    </div>
+                    <!-- name -->
+                    <!-- email -->
+                    <div class="input-field">
+                        <input type="text" id="email" name="email">
+                        <label for="email" class="mat-label">E-mail*</label>
+                    </div>
+                    <!-- email -->
+                    <!-- submit -->
+                    <button type="submit" class="waves-effect waves-light btn left">Feliratkozás</button>
+                    <!-- submit -->
+
+                    <div class="clear"></div>
+                    <!-- FLASH MESSAGE -->
+                    <!-- <div class="row">
+                        <div id="{{ __SELF__ }}_forms_flash" class="flash-card"></div>
+                    </div> -->
+                    <!-- FLASH MESSAGE -->
+
+                </div><!-- form-cont -->
+
+            </div><!-- col s12 m4 -->
+        </div><!-- row -->
+    </div><!-- footer-top -->
+
+
+    <div id="footer-bottom">
+        <div class="row row-nomargin">
+            <div class="col s12">
+                    <p class="copyright">copyright ©2017 <span>bardoni.hu</span></p>
+            </div><!-- col s12 -->
+        </div><!-- row -->
+    </div><!-- footer-bottom -->
+
+</div><!-- container -->

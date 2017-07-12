@@ -1,0 +1,123 @@
+//------------------------
+// RJ SLIDER
+//------------------------
+#advanced{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+#advanced img{
+    width: 100% !important;
+}
+
+//------------------------
+// SERVICES
+//------------------------
+#services{
+    background: $panel-bg;
+    padding: 62px 0;
+}
+
+.container-services{
+    @media(max-width: 992px){
+        width: 80%;
+    }
+    @media(max-width: 450px){
+        width: 90%;
+    }
+}
+
+.services-panel{
+    background: #1F1F21;
+    border: 1px solid #1F1F21;
+    padding: 15px;
+    position: relative;
+    min-height: 495px;
+    @media(max-width: 992px){
+        min-height: 0px;
+        height: auto;
+    }
+    &:hover{
+        background: #131315;
+    }
+    h2{
+        margin-top: 10px;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: 'EkMukta-Medium';
+    }
+    .head-image{
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    a.btn{
+        position: absolute;
+        bottom: 15px;
+        background: $primary-color;
+        @media(max-width: 992px){
+            position: relative;
+            margin-top: 20px;
+        }
+    }
+}
+
+//------------------------
+// RECENT ITEMS
+//------------------------
+#recent-items{
+    padding: 45px 0;
+}
+
+#recent-items h3{
+    font-size: 25px;
+    font-family: 'EkMukta-Medium';
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+ul.recent-items{
+    margin: 0;
+    padding: 0 10px;
+    li{
+        padding-bottom: 20px;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+        width: 24%;
+        display: grid;
+        float: left;
+        &:nth-child(4+1){
+            clear: left;
+            }
+        .panel-recent{
+            background: #2F3034;
+            .recent-image{
+                height: auto;
+                img{
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+            .recent-name{
+                height: 44px;
+                p.truncate{
+                    padding: 0 10px;
+                    text-align: center;
+                    line-height: 22px;
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    li:hover{
+        .panel-recent{
+            background: #1F1F21;
+            .recent-name{
+                p{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

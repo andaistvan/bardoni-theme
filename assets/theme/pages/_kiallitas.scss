@@ -1,0 +1,165 @@
+.container-kiallitas{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    @media(max-width: 992px){
+        width: 96%;
+    }
+}
+
+//------------------------
+// SIDEBAR - KIALLITÁS
+//------------------------
+aside#sidebar.kiallitas{
+    background: $panel-bg;
+    padding: 15px;
+    h2{
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 0 0 4px 0;
+        padding: 0;
+        color: $primary-color;
+    }
+}
+
+// ARTIST
+ul.artist-box{
+    margin: 0 0 20px 0;
+    padding: 0;
+    li{
+        font-family: 'EkMukta-Regular';
+    }
+    li.artist{
+        font-size: 15px;
+        margin: 0 0 4px 0;
+        padding: 0;
+        &:first-child{
+            margin-top: 12px;
+        }
+        a{
+            color: $gray-text;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+    li.sub-cat{
+        font-size: 15px;
+        a{
+            color: $gray-text;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+// KIÁLLÍTÁS LISTA
+ul.kiallitas-box{
+    li.kiallitas-list{
+        border-bottom: 1px solid $primary-color;
+        a{
+            p{
+                font-size: 15px;
+                color: white;
+                margin: 5px 0;
+                span{
+                    color: $gray-text;
+                }
+            }
+        }
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    li.kiallitas-list:hover p{
+        color: $primary-color;
+        span{
+            color: $primary-color;
+        }
+    }
+}
+
+//------------------------
+// KIALLITÁSOK
+//------------------------
+h1.kiallitas-head{
+    font-family: 'EkMukta-Bold';
+    text-align: center;
+    font-size: 30px;
+    color: $beige-text;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.kiallitas-panel{
+    background: $panel-bg;
+    width: 100%;
+    min-height: 200px;
+    padding: 15px 30px;
+    position: relative;
+}
+
+// LEFT
+.kiallitas-left{
+    width: 40%;
+    padding-right: 20px;
+    position: relative;
+}
+h2.artist-name{
+    font-family: 'EkMukta-Bold';
+    font-size: 24px;
+    text-align: left;
+    margin: 0;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+h3.kiallitas-title{
+    font-family: 'EkMukta-Bold';
+    font-size: 20px;
+    text-align: left;
+    color: $gray-text;
+    margin: 0;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.kiallitas-left hr{
+    border: 1px solid $gray-text;
+}
+p.kiallitas-excerpt{
+    font-size: 15px;
+    color: $gray-text;
+}
+p.kiallitas-date{
+    margin-bottom: 30px;
+}
+p.bovebben{
+    position: absolute;
+    left: 30px;
+    bottom: 15px;
+    margin: 0;
+    a{
+        color: $primary-color;
+        &:hover{
+            color: $primary-color-light;
+        }
+    }
+}
+
+// RIGHT
+.kiallitas-right{
+    width: 60%;
+}
+p.main-date{
+    font-family: 'EkMukta-Bold';
+    font-size: 24px;
+    text-align: right;
+    margin: 0;
+    color: $primary-color-dark;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.kiallitas-feat-box{
+    img{
+        max-width: 100%;
+    }
+}

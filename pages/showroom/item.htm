@@ -1,0 +1,22 @@
+title = "item"
+url = "/showroom/item"
+layout = "main-layout"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/item"
+==
+<div class="container container-main container-showroom">
+    <div class="row row-nomargin">
+
+        <div class="col s12 m3 hide-on-small-only">
+            {% partial 'sidebar-itemcat' %}
+        </div>
+
+        <div class="col s12 m9">
+            {% partial 'showroom-breadcrump' %}
+            {% partial 'showroom-item' %}
+        </div>
+
+    </div><!-- row row-nomargin -->
+</div><!-- container container-main -->

@@ -1,0 +1,33 @@
+description = "branding, main navigation"
+
+[viewBag]
+==
+
+<!-- MAIN NAVIGATION -->
+<nav id="main-navigation">
+    <a href="#" data-activates="slide-out" class="button-collapse right"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+        <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Kezdőlap</a></li>
+        <li class="{% if this.page.id == 'showroom-showroom' %}active{% endif %}"><a href="{{ 'showroom/showroom'|page }}">showroom</a></li>
+        <li class="{% if this.page.id == 'kiallitas-kiallitas-arcive' %}active{% endif %}"><a href="{{ 'kiallitas/kiallitas-arcive'|page }}">kiállítások</a></li>
+        <li class="{% if this.page.id == 'lakberendezes-lakberendezes' %}active{% endif %}"><a href="{{ 'lakberendezes/lakberendezes'|page }}">lakberendezés</a></li>
+        <li class="{% if this.page.id == 'kapcsolat' %}active{% endif %}"><a href="{{ 'kapcsolat'|page }}">Kapcsolat</a></li>
+    </ul>
+</nav>
+<!-- MOBIL NAVIGATION -->
+<ul id="slide-out" class="side-nav">
+    <div class="mobile-logo">
+        <img src="{{ 'assets/images/branding/bardoni-logo.png'|theme }}" alt="mobil menü Bardoni logó">
+    </div>
+    <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Kezdőlap</a></li>
+    <li class="{% if this.page.id == 'showroom-showroom' %}active{% endif %}"><a href="{{ 'showroom/showroom'|page }}">showroom</a></li>
+    <li class="{% if this.page.id == 'kiallitas-kiallitas-arcive' %}active{% endif %}"><a href="{{ 'kiallitas/kiallitas-arcive'|page }}">kiállítások</a></li>
+    <li class="{% if this.page.id == 'lakberendezes-lakberendezes' %}active{% endif %}"><a href="{{ 'lakberendezes/lakberendezes'|page }}">lakberendezés</a></li>
+    <li class="{% if this.page.id == 'kapcsolat' %}active{% endif %}"><a href="{{ 'kapcsolat'|page }}">Kapcsolat</a></li>
+    <li class="divider"></li>
+    <!-- LANGUAGE SWITCHER -->
+    <li class="mobile-language-cont">
+        {% component 'localePicker' %}
+    </li>
+    <!-- LANGUAGE SWITCHER -->
+</ul>

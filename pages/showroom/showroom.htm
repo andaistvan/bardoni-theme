@@ -1,0 +1,20 @@
+title = "showroom"
+url = "/showroom"
+layout = "main-layout"
+is_hidden = 0
+==
+<div class="container container-main container-showroom">
+    <div class="row row-nomargin">
+
+        <div class="col s12 m3 hide-on-small-only">
+            {% partial 'sidebar-itemcat' %}
+        </div>
+
+        <div class="col s12 m9">
+            {% partial 'showroom-info' %}
+            {% partial 'showroom-breadcrump' %}
+            {% partial 'showroom-items' %}
+        </div>
+
+    </div><!-- row row-nomargin -->
+</div><!-- container container-main -->

@@ -1,0 +1,25 @@
+description = "default header"
+
+[localePicker]
+forceUrl = 0
+==
+<!-- PARENT: header#layout-header -->
+
+<div class="container header-wrapper">
+    <div class="logo-cont left">
+        <a href="{{ 'home'|page }}" class="brand-logo"><img src="{{ 'assets/images/branding/bardoni-logo.png'|theme }}" alt="Bardoni logó"></a>
+    </div>
+
+    <!-- LANGUAGE SWITCHER -->
+    <div class="language-cont">
+	    {% component 'localePicker' %}
+    </div>
+    <!-- LANGUAGE SWITCHER -->
+
+    {% partial 'all-pages/main-navigation'%}
+
+
+
+<!-- BRANDING, MAIN NAVIGATION -->
+
+</div><!-- container -->
