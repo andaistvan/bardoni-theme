@@ -1,0 +1,31 @@
+description = "contact form"
+==
+<form data-request="{{ contactForm }}::onFormSubmit">
+
+   {{ form_token() }}
+
+   <div id="{{ contactForm }}_forms_flash"></div>
+
+   <!-- name -->
+        <div class="input-field">
+            <input type="text" id="name" name="name">
+            <label for="name" class="mat-label">Név*</label>
+        </div>
+        <!-- name -->
+        <!-- email -->
+        <div class="input-field">
+            <input type="text" id="email" name="email">
+            <label for="email" class="mat-label">E-mail*</label>
+        </div>
+        <!-- email -->
+        <!-- textarea -->
+        <div class="input-field">
+            <textarea id="dedikalas" class="materialize-textarea" name="dedikalas"></textarea>
+            <label for="dedikalas">Üzenet</label>
+        </div>
+        <!-- textarea -->
+
+
+   <button id="simpleContactSubmitButton" type="submit" class="btn btn-default">Küldés</button>
+
+</form>

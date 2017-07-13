@@ -1,0 +1,64 @@
+#kapcsolat-content{
+    background: $panel-bg;
+}
+//------------------------
+// KAPOCSOLAT
+//------------------------
+.container-kapcsolat{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    @media(max-width: 992px){
+        width: 96%;
+    }
+}
+
+#kapcsolat-content{
+    padding: 20px;
+}
+#kapcsolat-content h4{
+    font-size: 17px;
+    line-height: 40px;
+    color: white;
+    text-transform: capitalize;
+    text-align: left;
+    margin: 0px;
+}
+#kapcsolat-content p{
+    margin: 5px 0px;
+    line-height: 27px;
+}
+#kapcsolat-content p.margin-bottom27{
+    margin-bottom: 27px;
+}
+#kapcsolat-content p a{
+    color: white;
+    &:hover{
+        color:$primary-color;
+    }
+}
+
+//------------------------
+// GOOGLE MAP
+//------------------------
+.map-container{
+    background: $panel-bg;
+    padding: 20px;
+}
+iframe.map-wrapper{
+    width: 100%;
+    height: 400px;
+}
+
+//------------------------
+// VIRTUAL TOUR
+//------------------------
+.virtual-tour-wrapper{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    background: $panel-bg;
+}
+iframe.vt-wrap{
+    width: 100%;
+}
